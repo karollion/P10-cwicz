@@ -50,3 +50,22 @@
     //console.log(employeesNames, employeesSalaries);
   }
 }
+
+{
+  /* table: sum, max, min */
+  const salaries = [2000, 3000, 1500, 6000, 3000];
+
+  let sum = 0,
+      max = 0,
+      min = 99999999999;
+
+  for(let element of salaries){
+    sum += element;
+
+    if(element > max){ max = element;}
+    if(element < min){min = element;}
+  }
+  // console.log('sum: ', sum);
+  // console.log('max: ', max);
+  // console.log('min: ', min);
+}
