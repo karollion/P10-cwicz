@@ -124,5 +124,22 @@
     }
   };
 
-  forEach(['John', 'Amanda', 'Thomas'], function(item) { console.log(item); });
+  //forEach(['John', 'Amanda', 'Thomas'], function(item) { console.log(item); });
+}
+
+{
+  /* function formatName*/
+
+  const formatName = function(name){
+    const nameArr = name.split(' ');
+    const nameCap = [];
+    for(const name of nameArr){
+      nameCap.push(name.charAt(0).toUpperCase() + name.substr(1).toLowerCase());
+    }
+    return nameCap.join(' ');
+  }
+
+  //console.log(formatName('aMAnDa dOE manSOn'));
+  //console.log(formatName('AMANDA DOE'));
+  //console.log(formatName('john DOE'));
 }
