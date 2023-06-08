@@ -143,3 +143,17 @@
   //console.log(formatName('AMANDA DOE'));
   //console.log(formatName('john DOE'));
 }
+
+{
+  /* function getEventsInRange */
+  const getEvensInRange = function(start, end){
+    const evenNumbers = [];
+    for(let i = start; i <= end; i++){
+      const dziel = i % 2;
+      if(i % 2 == 0) evenNumbers.push(i);
+    };
+    return evenNumbers;
+  };
+
+  console.log(getEvensInRange(0, 9));
+}
