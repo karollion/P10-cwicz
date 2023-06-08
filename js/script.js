@@ -98,3 +98,19 @@
   const filteredEmployees = filterEmployees(employees, salaryMin, salaryMax);
   //console.log(filteredEmployees);
   }
+
+{
+  /* create function to show obiect */
+  const obj = {
+    firstName: 'John',
+    lastName: 'Doe'
+  }
+
+  const show = function(obj){
+    for(const paramId in obj){
+      const param = obj[paramId];
+      console.log(paramId +': ' + param);
+    }
+  }
+  const showObiectParams = show(obj);
+}
