@@ -155,5 +155,19 @@
     return evenNumbers;
   };
 
-  console.log(getEvensInRange(0, 9));
+  //console.log(getEvensInRange(0, 9));
+}
+
+{
+  /* function filter*/
+
+  const filter = function(arr, func){
+    const filtred = [];
+    for(const elem of arr){
+      if(func(elem)) filtred.push(elem);
+    }
+    return filtred;
+  };
+
+  console.log(filter([5, 6, 7, 8], function(item) { return item%2 === 0 }));
 }
