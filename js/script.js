@@ -109,8 +109,20 @@
   const show = function(obj){
     for(const paramId in obj){
       const param = obj[paramId];
-      console.log(paramId +': ' + param);
+      //console.log(paramId +': ' + param);
     }
   }
   const showObiectParams = show(obj);
+}
+
+{
+  /* function forEach*/
+
+  const forEach = function(array, func){
+    for(let element of array){
+      func(element);
+    }
+  };
+
+  forEach(['John', 'Amanda', 'Thomas'], function(item) { console.log(item); });
 }
