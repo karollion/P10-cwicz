@@ -69,3 +69,32 @@
   // console.log('max: ', max);
   // console.log('min: ', min);
 }
+
+{
+  /* create new function, it return new array that meets the condition ( min < salary < max ) */
+  const employees = [
+    { name: 'Amanda Doe', salary: 3000 },
+    { name: 'John Doe', salary: 4000 },
+    { name: 'Claire Downson', salary: 2000 },
+    { name: 'Freddie Clarkson', salary: 6000 },
+    { name: 'Thomas Delaney', salary: 8200 }
+  ];
+
+  const salaryMin = 2000;
+  const salaryMax = 8000;
+
+  const filterEmployees = function(employees, salaryMin, salaryMax){
+    const employeesNew = [];
+
+    for(const employerId in employees){
+      const employer = employees[employerId];
+      if(employer.salary > salaryMin && employer.salary < salaryMax){
+        employeesNew.push(employer);
+      }
+    }
+    return employeesNew;
+  };
+
+  const filteredEmployees = filterEmployees(employees, salaryMin, salaryMax);
+  //console.log(filteredEmployees);
+  }
